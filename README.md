@@ -1,4 +1,4 @@
-Opiniatated emacs scripts to make emacs "easier" to use, by following modern IDE/editor bindings.
+Opinionated emacs scripts to make emacs "easier" to use, by following modern IDE/editor bindings.
 
 Uses hijackey-emacs (https://github.com/louispan/hijackey-emacs) to enable more key combinations in terminal.
 
