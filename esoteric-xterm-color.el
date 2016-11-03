@@ -40,4 +40,8 @@
 
 ;;  Don't forget to setenv TERM xterm-256color
 
+;; fix for xterm-color package breakages
+;; https://github.com/syl20bnr/spacemacs/issues/7393
+(fset 'xterm-color-unfontify-region 'font-lock-default-unfontify-region)
+
 (provide 'esoteric-xterm-color)
