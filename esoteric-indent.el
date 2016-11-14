@@ -57,7 +57,7 @@
   (esoteric-set-local-indent-line-rigidly)
   (electric-indent-mode 0))
 
-(setq standard-indent 2)
-(setq-default tab-width 2)
+(setq standard-indent 4)
+(setq-default tab-width 4)
 
 (provide 'esoteric-indent)
