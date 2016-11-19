@@ -106,4 +106,8 @@
 (esoteric-package-install 'hindent)
 (add-hook 'haskell-mode-hook #'hindent-mode)
 
+(setq haskell-indentation-layout-offset standard-indent)
+(setq haskell-indentation-left-offset standard-indent)
+(setq haskell-indentation-starter-offset standard-indent)
+
 (provide 'esoteric-haskell)
