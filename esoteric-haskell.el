@@ -103,7 +103,10 @@
 ;; chrisdone's auto indent formatter
 ;; M-q reformats the current declaration. When inside a comment, it fills the current paragraph instead, like the standard M-q.
 ;; C-M-\ reformats the current region.
-(esoteric-package-install 'hindent)
+;; (esoteric-package-install 'hindent)
+(unless (require 'hindent nil t)
+    (quelpa '(hindent :repo "chrisdone/hindent" :fetcher github :files ("elisp/hindent.el")))
+    (require 'hindent))
 (add-hook 'haskell-mode-hook #'hindent-mode)
 
 (setq haskell-indentation-layout-offset standard-indent)
