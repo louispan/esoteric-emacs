@@ -133,7 +133,7 @@ https://github.com/emacs-helm/helm/blob/38b12a63e045b5adf48f8a1009bba8a16d9c3f03
 
 ;; Add projectile sources to helm-mini
 (setq helm-mini-default-sources
-      '(helm-source-buffers-list helm-source-recentf helm-source-buffer-not-found helm-source-projectile-files-list helm-source-projectile-projects))
+      '(helm-source-buffers-list helm-source-recentf helm-source-projectile-files-list helm-source-projectile-projects helm-source-buffer-not-found))
 
 (defun esoteric-helm-copy-to-clipboard ()
   "Copy selection or marked candidates to clipboard.
