@@ -135,6 +135,11 @@ https://github.com/emacs-helm/helm/blob/38b12a63e045b5adf48f8a1009bba8a16d9c3f03
 (setq helm-mini-default-sources
       '(helm-source-buffers-list helm-source-recentf helm-source-projectile-files-list helm-source-projectile-projects helm-source-buffer-not-found))
 
+;; Always use the previous search for helm. Remember C-<backspace> will delete entire line
+(setq helm-swoop-pre-input-function
+      (lambda () (if (boundp 'helm-swoop-pattern)
+                     helm-swoop-pattern "")))
+
 (defun esoteric-helm-copy-to-clipboard ()
   "Copy selection or marked candidates to clipboard.
 Note that the real values of candidates are copied and not the
