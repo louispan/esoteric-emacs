@@ -80,6 +80,7 @@
 (require 'esoteric-vimrc)
 
 ;; Misc
+(require 'esoteric-yaml-key)
 (require 'server)
 (setq server-use-tcp t)
 (require 'tramp)
