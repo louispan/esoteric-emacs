@@ -44,7 +44,7 @@
 (require 'esoteric-helm-key)
 
 ;; Navigation
-(require 'esoteric-mouse)
+(require 'esoteric-mouse-key)
 (require 'esoteric-mark-key)
 (require 'esoteric-goto-key)
 (require 'esoteric-motion-key)
